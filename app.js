@@ -1,20 +1,3 @@
-let anniversary = "2024-10-07";
-let date = new Date(anniversary);
-let dateVal = date.getTime();
-let today = new Date();
-let now = today.getTime();
-let value = now - dateVal;
-let day = Math.floor(value / (1000 * 60 * 60 * 24));
-let month = Math.floor(value / (1000 * 60 * 60 * 24 * 30.4375));
-let year = Math.floor(value / (1000 * 60 * 60 * 24 * 365.25));
-
-console.log(value);
-
-document.getElementById("days").textContent = day.toString();
-document.getElementById("months").textContent = month.toString();
-document.getElementById("years").textContent = year.toString();
-
-
 let musicPlayer = document.querySelector(".music-container");
 let togglePlayer = document.querySelector(".toggle-player");
 
@@ -60,9 +43,9 @@ let soundBarsLottie = bodymovin.loadAnimation({
 
 let trackList = [
     {
-        name: "Die with a smile",
-        artist: "Lady Gaga & Bruno Mars",
-        path: "./music/only.mp3",
+        name: "Абсолютно все",
+        artist: "МОТ",
+        path: "music/only.mp3",
     },
 ];
 
